@@ -1,7 +1,9 @@
 from selenium.webdriver import Remote, ChromeOptions
 from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnection
 from bs4 import BeautifulSoup
-SBR_WebDriver = "https://brd-customer-hl_a1d216e5-zone-scraping_browser1:cjjy2s178xb5@brd.superproxy.io:9515"
+
+#add your Bright Data Web Socket link here
+SBR_WebDriver = "***************************************************************"
 def scrape_website(website):
     print("Connecting to Scraping Browser...")
     sbr_connection = ChromiumRemoteConnection(SBR_WebDriver, "goog", "chrome")
